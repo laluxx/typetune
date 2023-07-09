@@ -1,0 +1,46 @@
+#+TITLE: Keyboard Sounds
+#+AUTHOR: laluxx
+
+* Introduction
+This project is a simple Python script that enhances your typing experience by playing mechanical keyboard sounds as you type. Each key press triggers a randomly chosen sound, simulating the feel of typing on a mechanical keyboard.
+
+* Features
+  - Dynamically loads sound files
+  - Easily customizable with different sound themes
+  - Exclude specific keys or key combinations from making sounds
+
+* Installation
+** Requirements
+   - Python 3
+   - pygame library
+   - pynput library
+
+** Setup
+   #+BEGIN_SRC shell
+   git clone https://github.com/yourusername/keyboard-sounds.git
+   cd keyboard-sounds
+   yay -S python-pynput
+   #+END_SRC
+
+* Configuration
+** Sounds
+   Place your sound files inside the ~/switches/theme_name/~ directory. The script dynamically loads all .ogg files in this directory.
+
+** Excluded Keys
+   You can exclude specific keys or key combinations from making sounds by editing the ~excluded_keys~ and ~excluded_combinations~ variables in the script. For example, to exclude the "h" key, add it to the ~excluded_keys~ list.
+
+   #+BEGIN_SRC python
+   excluded_keys = ["h", "j", "k", "l", "up", "right", "left", "down", "1", "2", "3", "4", "5", "6", "backspace", "enter", "shift", "ctrl", "cmd", "alt", "tab"]
+   #+END_SRC
+
+* Usage
+   Run the script by executing the command below in your terminal:
+   #+BEGIN_SRC shell
+   python main.py
+   #+END_SRC
+
+* Contributing
+   Feel free to fork the project and submit pull requests! Any contribution to improve the script or add new sound themes is appreciated.
+
+* License
+   This project is licensed under the MIT License. See the LICENSE file for details.
