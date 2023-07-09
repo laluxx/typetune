@@ -1,4 +1,4 @@
-#+TITLE: Keyboard Sounds
+#+TITLE: Typetune
 #+AUTHOR: laluxx
 
 * Introduction
@@ -17,14 +17,14 @@ This project is a simple Python script that enhances your typing experience by p
 
 ** Setup
    #+BEGIN_SRC shell
-   git clone https://github.com/yourusername/keyboard-sounds.git
-   cd keyboard-sounds
+   git clone https://github.com/yourusername/typetune.git
+   cd typetune
    yay -S python-pynput
    #+END_SRC
 
 * Configuration
 ** Sounds
-   Place your sound files inside the ~/switches/theme_name/~ directory. The script dynamically loads all .ogg files in this directory.
+   Place your sound files inside the ~/xos/typetune/switches/theme_name/~ directory. The script dynamically loads all .ogg and .waw files in this directory.
 
 ** Excluded Keys
    You can exclude specific keys or key combinations from making sounds by editing the ~excluded_keys~ and ~excluded_combinations~ variables in the script. For example, to exclude the "h" key, add it to the ~excluded_keys~ list.
