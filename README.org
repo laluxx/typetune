@@ -2,19 +2,27 @@
 #+AUTHOR: laluxx
 
 * Introduction
-This project is a simple Python script that enhances your typing experience by playing mechanical keyboard sounds as you type. Each key press triggers a randomly chosen sound, simulating the feel of typing on a mechanical keyboard.
+This project is a simple Python script that enhances your typing experience by playing custom keyboard sounds as you type. Each key press triggers a randomly chosen sound, simulating the feel of typing on a mechanical keyboard.
 
 * Features
   - Dynamically loads sound files
   - Easily customizable with different sound themes
   - Exclude specific keys or key combinations from making sounds
+  - uses same structure as osu skins, so there are alot of possible themes
 
+* TODO
+- specific key combination sound like super + 1 or super + 2, so you can bind a specific sound when switching to a workspace in any window manager
+- bind sound to a specific key like super
+- bind sound to a specific key combination like super + shift
+- variate the sound pith a little bit randomly so it feel more realistic
+- exclude specific key combination to make sound
+- add sound to : click, right click <mouse-8> and <mouse-9>
+- as now you have to write the theme folder inside the src code, id like to make a config file in ~/.config/typetune/typetunerc or something, so it more scriptable
 * Installation
 ** Requirements
    - Python 3
    - pygame library
    - pynput library
-
 ** Setup
    #+BEGIN_SRC shell
    git clone https://github.com/yourusername/typetune.git
