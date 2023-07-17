@@ -7,7 +7,7 @@ from pynput import keyboard
 script_dir = os.path.dirname(os.path.realpath(__file__))
 
 # Path to the theme directory. Change 'theme_name' to your desired theme.
-theme_dir = os.path.join(script_dir, "switches", "bloop")
+theme_dir = os.path.join(script_dir, "switches", "「 ANZT10S 」")
 
 # Initialize Pygame
 pygame.init()
